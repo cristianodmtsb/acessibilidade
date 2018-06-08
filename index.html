@@ -4,12 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
+    <title>Acessibilidade - Cristiano Castro</title>
 
-    
-    
+    <!-- CHAMADA DO BOOTSTRAP -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+    <!-- STYLE E CONTRASTE -->
+    <link rel='stylesheet' id='styleContraste' href="css/style.css"  type='text/css' media='all' />
+
+</head>
+<body onload="checkCookie()">
+    <div class="container">
+        <div class="row">
+
+            <h1 class="col-12 pt-5 pb-1">Acessibilidade</h1>
+            <h4 class="col-12 pt-0 border-bottom">Selecione a acessbilidade desejada</h4>
+
+            <div class="acessibilidade row py-3 col-12">
+                <div class="col-sm-4">
+                    <span class="font-con">
+                        Fonte: <button Onclick="mudaFonte('menos'); return false;" class="btn btn-secondary btn-sm">A-</button>
+                        <button Onclick="mudaFonte('padrao'); return false;" class="btn btn-secondary btn-sm">A</button>
+                        <button Onclick="mudaFonte('mais'); return false;" class="btn btn-secondary btn-sm">A+</button>
+                    </span>
+                </div>
+                <div class="col-sm-4">
+                    <span class="font-con">
+                        Contraste: 
+                        <button id="mudaEstilo" onClick="mudaContraste()" class="btn btn-secondary btn-sm">PRETO</button>
+                    </span>
+                </div>
+            </div>
+
+            <div class="col-12 py-4">
+                <div class="txtFontC">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora illo, quaerat quis iste totam fuga nisi ea sunt aliquid facere porro omnis at amet neque pariatur officia aperiam atque ex. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam consectetur eligendi nulla eos optio, aliquid nobis, quia quidem ipsum consequatur recusandae, cumque dolor quod porro dolorem veniam excepturi fuga impedit.</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur beatae non aut temporibus itaque vitae, possimus consequatur, neque ipsum cumque magni optio delectus! Ipsam consequuntur dolores nostrum cumque vel voluptate? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla non sint maiores aliquam? Ratione, enim sed dolor ad corporis est nihil quos, rerum maxime veniam molestias deserunt, cupiditate fugiat totam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit doloremque totam minus sed itaque illo non nostrum pariatur eligendi molestiae ipsam voluptas eaque eos, ex sunt dicta voluptates fuga provident.</p>
+                </div>
+            </div>
+
+            <footer class="txtFontC footer row col-12 rounded-top">
+                <div class="col-sm-3">
+                    <ul>
+                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Link 2</a></li>
+                        <li><a href="#">Link 3</a></li>
+                        <li><a href="#">Link 4</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <ul>
+                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Link 2</a></li>
+                        <li><a href="#">Link 3</a></li>
+                        <li><a href="#">Link 4</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <ul>
+                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Link 2</a></li>
+                        <li><a href="#">Link 3</a></li>
+                        <li><a href="#">Link 4</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <ul>
+                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Link 2</a></li>
+                        <li><a href="#">Link 3</a></li>
+                        <li><a href="#">Link 4</a></li>
+                    </ul>
+                </div>
+            </footer>
+
+        </div><!--ROW-->
+    </div><!--CONTAINER-->
 
     <script src="js/acessibilidade.js"></script>
 </body>
